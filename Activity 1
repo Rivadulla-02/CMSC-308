@@ -1,0 +1,46 @@
+using System;
+
+using System.IO;
+
+using System.Linq;
+
+using System.Collections.Generic;
+
+
+
+namespace CSharp_Shell
+
+{
+
+
+
+    public class Program 
+
+    {
+
+        public static void Main()
+
+        {
+
+			
+			string Name;
+
+			Console.WriteLine ("Email:");
+
+			Name = Console.ReadLine();
+
+			Console.WriteLine ("Username:");
+
+			Name = Console.ReadLine();
+
+			Console.WriteLine ("Password:");
+
+			Name = Console.ReadLine();
+
+			
+
+        }
+
+    }
+
+}
