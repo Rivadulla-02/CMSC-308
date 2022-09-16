@@ -1,0 +1,29 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+    public static class Program 
+    {
+        public static void Main() 
+        {
+           double average = 0;
+           Console.WriteLine ("Enter 5 grades separated by new lines: ");
+           
+           for(int i = 1; i<4; i++)
+          {
+          	Console.Write("");
+          	double num = Convert.ToDouble(Console.ReadLine());
+          	average += num;
+          }
+          double fa = average / 4;
+          int fc = Convert.ToInt32(fa);
+          Console.Write
+          ("The average is" + fa + "and roud off to " + fc );
+        }
+        
+    }
+}
