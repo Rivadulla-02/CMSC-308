@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+ namespace HSet
+ {
+   public class Program
+   {
+     public static void Main(string[] args)
+     {
+      HashSet<int> mySet1 = new HashSet<int>(); 
+
+        HashSet<int> mySet2 = new HashSet<int>();  
+
+        Console.WriteLine("===HashSet1==="); 
+
+          
+
+        for (int i = 1; i < 6; i++) { 
+
+            mySet1.Add(i * 1); 
+
+            Console.WriteLine(i * 1); 
+
+        } 
+ 
+
+        Console.WriteLine("===HashSet2==="); 
+
+        for (int i = 1; i < 6; i++) { 
+
+            mySet2.Add(i * 1 * 2); 
+
+            Console.WriteLine(i *1 * 2); 
+
+        } 
+
+      var resultUnion = mySet1.Union(mySet2);
+      var resultIntersect = mySet1.Intersect(mySet2);
+      var resultExcept = mySet1.Except(mySet2);
+      System.Console.WriteLine("UNION:");
+      foreach (var item in resultUnion){
+         Console.WriteLine(item);
+      }
+      System.Console.WriteLine("INTERSECT:");
+      foreach (var item in resultIntersect){
+         Console.WriteLine(item);
+      }
+      System.Console.WriteLine("SET DIFFERENCE:");
+      foreach (var item in resultExcept){
+         Console.WriteLine(item);
+      }
+          
+        }
+     }
+   }
